@@ -1,0 +1,76 @@
+1.
+	a. 3
+	b. 3
+	c. 1
+	d. 1
+	e. 6
+	f. 5
+	g. 6
+	h. 5
+
+	i. 5
+	j. 1
+
+	k. 2
+	l. 3
+	m. 4
+	n. 4
+	
+	o.
+		1.true
+		2. true
+		3. tru
+		4. true
+		5. True (is rebalance what calls the rotates? because then yes)
+		6. false (is not relevant)
+	p. 3
+	
+
+	q. 1 
+	r. logn, 3
+
+
+	u.
+	Proof:
+We want to show that LCA will return:
+	a. A common ancestor of l and h
+	b. The LEAST common ancestor of l and h
+	Let's consider 3 cases:
+	1: l is in the left subtree and r in the right. This is the easiest case as by the BST's invariant, the root node is between l and h and LCA will return the root. Thus, a is satisfied. Is it the least? Yes. If we were to traverse down the left sub tree, it is easy to see that nothing in the tree is an ancestor of anything in the right tree and vice-versa. Thus, the root is the least common ancestor. Note also that if the root IS either l or h, the root is still the LCA in this case by the same logic. It is in the range of l to h, and traversing down either way will lose the other one.
+	2: l and r are both in the left subtree. Since the root is not in range of l to r, we enter the loop. Since the root is bigger than l as l is in the left subtree, we traverse into the left subtree. We are now recursively able to do any of the three cases (third to follow) until we reach case 1, where the root is the range of l to h. If no number in the tree is in the range, it will go to either the lowest or highest number in the tree (following from where the range is relative to the tree) and set the examined node to null, breaking the loop and returning null, which is correct.
+	3: l anr r are both in right subtree, go right, recurse until null or 1
+	Thus, CORRECT
+
+	I went a different direction. I did fail to prove that it maintained the invariant was held, and I am feeling kind of confused about that. The proof by contradiction is tighter than mine, and perhaps mine falls a little short in tightness and being proper, but I think it makes a strong logical argument.
+
+3-2 DCL
+	a. intersects
+	b. 187590314
+#I was doing it for the wrong thing
+	c.
+		1. true
+		2. false
+		3. false
+		4. false
+		5. true
+	d. 1, it is added
+	e. 4, nothing happends
+	f. 4 nothing
+	g. 3 a range index query is p formed
+	h. 2, stabby stabs
+	i. 
+		
+##Better
+c.
+	1. true
+	2. true
+	3. false
+	4. false
+	5. true
+d. 1
+e. 2
+f. 4
+g. 3
+h 2
+i 2
+

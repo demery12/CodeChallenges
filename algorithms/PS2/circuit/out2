@@ -1,0 +1,25 @@
+LOOK AT THIS [[0, 'a', 0, <__main__.Gate instance at 0x7fcc417565a8>], [0, 'b', 0, <__main__.Gate instance at 0x7fcc417565f0>], [10, 'a', 1, <__main__.Gate instance at 0x7fcc417565a8>], [20, 'b', 1, <__main__.Gate instance at 0x7fcc417565f0>]]
+[<Transition at t=0, gate a -> 0>, <Transition at t=0, gate b -> 0>, <Transition at t=10, gate a -> 1>, <Transition at t=20, gate b -> 1>] 4
+[<Transition at t=0, gate a -> 0>, <Transition at t=0, gate b -> 0>, <Transition at t=10, gate a -> 1>, <Transition at t=20, gate b -> 1>] 4 KURRPOW
+<Transition at t=0, gate a -> 0> farts
+TING
+<Transition at t=0, gate b -> 0> farts
+TING
+[<Transition at t=10, gate a -> 1>, <Transition at t=20, gate b -> 1>] 2 KURRPOW
+<Transition at t=10, gate a -> 1> farts
+HUGE HORSE
+[<Transition at t=20, gate b -> 1>, <Transition at t=19, gate axb -> 1>] 2 KURRPOW
+<Transition at t=19, gate axb -> 1> farts
+HUGE HORSE
+HUGE HORSE
+[<Transition at t=20, gate b -> 1>] 1 KURRPOW
+<Transition at t=20, gate b -> 1> farts
+HUGE HORSE
+[<Transition at t=29, gate axb -> 0>] 1 KURRPOW
+<Transition at t=29, gate axb -> 0> farts
+HUGE HORSE
+HUGE HORSE
+DINGNINGIN
+[[19, 'axb', 1], [29, 'axb', 0]]
+19 axb 1
+29 axb 0
